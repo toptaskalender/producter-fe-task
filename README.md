@@ -20,4 +20,4 @@ Run `npm start` to start the application.
 
 Here is the public URL of the deployed application:
 
-    https://todo-producter.herokuapp.com
+    https://todos-producter.herokuapp.com
