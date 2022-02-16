@@ -5,6 +5,7 @@ import {
   toggleCompletion,
   clearCompletedTodos
 }                           from '../../store/actionCreators';
+import './todoList.css';
 
 function TodoList() {
   const dispatch  = useDispatch();
@@ -20,18 +21,23 @@ function TodoList() {
 
   const renderedTodos = todos.map(todo => (
     <TodoListItem
-      key={todo.id}
-      name={todo.name}
-      isCompleted={todo.isCompleted}
-      onClick={() => handleTodoToggling(todo.id)}
+      key         = {todo.id}
+      name        = {todo.name}
+      isCompleted = {todo.isCompleted}
+      onClick     = {() => handleTodoToggling(todo.id)}
     />
   ));
 
   return (
-    <div>
-      <ul>{renderedTodos}</ul>
-      <button onClick={handleClearingCompletedTodos}>
-        Clear Completed
+    <div className='todo-list-container'>
+      <ul className='todo-list'>
+        {renderedTodos}
+      </ul>
+      <button 
+        onClick={handleClearingCompletedTodos}
+        className='btn btn-clear-completed-todos'
+      >
+        Clear Completed Todos
       </button>
     </div>
   )

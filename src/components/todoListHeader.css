@@ -1,0 +1,18 @@
+.todo-list-header-container {
+  width           : 70%;
+  text-align      : center;
+  
+  padding-bottom  : 1%;
+
+  font-family     : 'Nunito';
+
+  background      : linear-gradient(90deg, #047012, #03c4ff);
+  background-clip : text;
+  color           : transparent;
+
+  border-bottom   : 2px solid black;
+}
+
+.todo-list-header {
+  margin          : 0;
+}

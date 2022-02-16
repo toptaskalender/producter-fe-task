@@ -1,14 +1,16 @@
-import './todoListItem.css'
+import './todoListItem.css';
 
 function TodoListItem({ name, isCompleted, onClick }) {
+  const isCompletedStyle = `${isCompleted ? 'completed' : ''}`;
+
   return (
     <li
-      className={isCompleted ? 'completed' : ''}
+      className={`todo-list__item ${isCompletedStyle}`}
       onClick={onClick}
     >
       {name}
     </li>
-  )
+  );
 }
 
 export default TodoListItem;

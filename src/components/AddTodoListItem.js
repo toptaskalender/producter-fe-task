@@ -1,6 +1,7 @@
 import { useState }     from 'react';
 import { useDispatch }  from 'react-redux';
 import { createTodo }   from '../store/actionCreators';
+import './addTodoListItem.css';
 
 function AddTodoListItem() {
   const [todo, setTodo] = useState('');
@@ -17,15 +18,23 @@ function AddTodoListItem() {
   }
 
   return (
-    <div>
-      <form onSubmit={handleSubmit}>
+    <div className='add-todo-list-item-container'>
+      <form 
+        onSubmit={handleSubmit}
+        className='add-todo-list-item'
+      >
         <input 
           type="text"
-          placeholder="Enter Task"
+          placeholder="Enter Todo"
           value={todo}
           onChange={handleChange}
+          className='add-todo-list-item__input'
         />
-        <button>Add</button>
+        <button
+          className='btn add-todo-list-item__btn'
+        >
+          Create Todo
+        </button>
       </form>
     </div>
   )

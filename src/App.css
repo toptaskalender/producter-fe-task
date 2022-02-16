@@ -1,8 +1,27 @@
-.App {
-  display         : flex;
-  flex-direction  : column;
-  justify-content : center;
-  align-items     : center;
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 
-  /* height          :100vh; */
+.App {
+  font-family       : 'Nunito';
+
+  display           : flex;
+  flex-direction    : column;
+  justify-content   : center;
+  align-items       : center;
+
+  width             : 70%;
+
+  margin            : 1% 15%;
+  padding           : 5%;
+
+  background-color  : rgb(247, 247, 247);
+}
+
+.btn {
+  font-family       : 'Nunito';
+  font-size         : 105%;
+  font-weight       : bold;
+
+  border            : none;
+  
+  cursor            : pointer;
 }
