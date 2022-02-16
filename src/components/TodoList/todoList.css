@@ -15,7 +15,7 @@
   padding         : 0;
 }
 
-.btn-clear-completed-todos {
+.btn--clear-completed-todos {
   margin-top      : 2%;
   padding         : 2% 5%;
 
@@ -25,7 +25,7 @@
   color           : transparent;
 }
 
-.btn-clear-completed-todos:hover {
+.btn--clear-completed-todos:hover {
   background      : linear-gradient(90deg, #460505, #b90000);
   background-clip : text;
   color           : transparent;

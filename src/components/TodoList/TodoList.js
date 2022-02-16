@@ -2,7 +2,7 @@ import { useSelector }      from 'react-redux';
 import { useDispatch }      from 'react-redux';
 import TodoListItem         from './TodoListItem/TodoListItem';
 import {
-  toggleCompletion,
+  toggleTodoCompletion,
   clearCompletedTodos
 }                           from '../../store/actionCreators';
 import './todoList.css';
@@ -12,8 +12,8 @@ function TodoList() {
   const todos       = useSelector(state => state.todos);
   const hasAnyTodo  = todos.length !== 0;
 
-  const handleTodoToggling = id => {
-    dispatch(toggleCompletion(id));
+  const handleTogglingTodoCompletion = id => {
+    dispatch(toggleTodoCompletion(id));
   }
   
   const handleClearingCompletedTodos = () => {
@@ -25,7 +25,7 @@ function TodoList() {
       key         = {todo.id}
       name        = {todo.name}
       isCompleted = {todo.isCompleted}
-      onClick     = {() => handleTodoToggling(todo.id)}
+      onClick     = {() => handleTogglingTodoCompletion(todo.id)}
     />
   ));
 
@@ -44,7 +44,7 @@ function TodoList() {
       </ul>
       <button 
         onClick={handleClearingCompletedTodos}
-        className='btn btn-clear-completed-todos'
+        className='btn btn--clear-completed-todos'
       >
         Clear Completed Todos
       </button>

@@ -1,6 +1,6 @@
-import TodoListHeader   from './components/TodoListHeader';
+import TodoListHeader   from './components/TodoListHeader/TodoListHeader';
 import TodoList         from './components/TodoList/TodoList';
-import AddTodoListItem  from './components/AddTodoListItem';
+import AddTodoListItem  from './components/AddTodoListItem/AddTodoListItem';
 import './App.css';
 
 function App() {

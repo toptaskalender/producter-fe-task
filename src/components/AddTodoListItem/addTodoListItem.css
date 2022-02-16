@@ -26,7 +26,7 @@
   text-align      : center;
 }
 
-.add-todo-list-item__btn {
+.btn--add-todo-list-item {
   padding         : 2% 10%;
 
   background      : linear-gradient(90deg, #047012, #03c4ff);
@@ -34,7 +34,7 @@
   color           : transparent;
 }
 
-.add-todo-list-item__btn:hover {
+.btn--add-todo-list-item:hover {
   background      : linear-gradient(90deg, #03490c, #03a7da);
   background-clip : text;
   color           : transparent;

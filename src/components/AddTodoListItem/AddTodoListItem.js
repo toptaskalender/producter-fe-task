@@ -1,6 +1,6 @@
 import { useState }     from 'react';
 import { useDispatch }  from 'react-redux';
-import { createTodo }   from '../store/actionCreators';
+import { createTodo }   from '../../store/actionCreators';
 import './addTodoListItem.css';
 
 function AddTodoListItem() {
@@ -31,7 +31,7 @@ function AddTodoListItem() {
           className='add-todo-list-item__input'
         />
         <button
-          className='btn add-todo-list-item__btn'
+          className='btn btn--add-todo-list-item'
         >
           Create Todo
         </button>

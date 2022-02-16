@@ -1,6 +1,6 @@
 import * as actionTypes from './actionTypes';
 
-export const toggleCompletion = id => {
+export const toggleTodoCompletion = id => {
   return {
     type    : actionTypes.TOGGLE_TODO_COMPLETION,
     payload : { id }
