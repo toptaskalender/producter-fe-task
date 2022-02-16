@@ -7,17 +7,12 @@
   margin          : 3% 0% 6% 0%;
   padding-bottom  : 2%;
 
-
   border-bottom   : 2px solid black;
 }
 
 .todo-list {
   margin          : 0;
   padding         : 0;
-}
-
-.todo-list__item {
-  margin-bottom   : 10%;
 }
 
 .btn-clear-completed-todos {
@@ -31,7 +26,7 @@
 }
 
 .btn-clear-completed-todos:hover {
-  background      : linear-gradient(90deg, #9c7070, #555151);
+  background      : linear-gradient(90deg, #460505, #b90000);
   background-clip : text;
   color           : transparent;
 }

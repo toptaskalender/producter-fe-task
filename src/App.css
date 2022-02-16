@@ -17,7 +17,7 @@
 }
 
 .btn {
-  font-family       : 'Nunito';
+  font-family       : inherit;
   font-size         : 105%;
   font-weight       : bold;
 

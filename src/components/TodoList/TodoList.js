@@ -1,5 +1,5 @@
 import { useSelector }      from 'react-redux';
-import { useDispatch }      from 'react-redux'
+import { useDispatch }      from 'react-redux';
 import TodoListItem         from './TodoListItem/TodoListItem';
 import {
   toggleCompletion,
@@ -8,8 +8,9 @@ import {
 import './todoList.css';
 
 function TodoList() {
-  const dispatch  = useDispatch();
-  const todos     = useSelector(state => state.todos);
+  const dispatch    = useDispatch();
+  const todos       = useSelector(state => state.todos);
+  const hasAnyTodo  = todos.length !== 0;
 
   const handleTodoToggling = id => {
     dispatch(toggleCompletion(id));
@@ -27,6 +28,14 @@ function TodoList() {
       onClick     = {() => handleTodoToggling(todo.id)}
     />
   ));
+
+  if (!hasAnyTodo) {
+    return (
+      <div className='todo-list-container'>
+        <p>There is no todo to display</p>
+      </div>
+    )
+  }
 
   return (
     <div className='todo-list-container'>

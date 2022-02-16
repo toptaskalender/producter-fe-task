@@ -35,7 +35,7 @@
 }
 
 .add-todo-list-item__btn:hover {
-  background      : linear-gradient(90deg, #047012, #03c4ff);
+  background      : linear-gradient(90deg, #03490c, #03a7da);
   background-clip : text;
   color           : transparent;
 }
