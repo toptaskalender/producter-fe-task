@@ -1,6 +1,13 @@
-function TodoListItem({ name, isCompleted }) {
+import './todoListItem.css'
+
+function TodoListItem({ name, isCompleted, onClick }) {
   return (
-    <li>{name}</li>
+    <li
+      className={isCompleted ? 'completed' : ''}
+      onClick={onClick}
+    >
+      {name}
+    </li>
   )
 }
 
