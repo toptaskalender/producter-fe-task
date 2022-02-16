@@ -6,6 +6,7 @@ const initialState = {
     { id: getId(), name: 'Wash the Car', isCompleted: false },
     { id: getId(), name: 'Buy More Milk', isCompleted: false },
     { id: getId(), name: 'Clean the Kitchen', isCompleted: true },
+    { id: getId(), name: 'Read at least one article about JavaScript', isCompleted: false },
   ]
 }
 
