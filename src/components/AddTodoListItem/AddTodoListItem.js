@@ -12,9 +12,13 @@ function AddTodoListItem() {
   }
 
   const handleSubmit = e => {
+    const isInputEmpty = todo.trim() === '';
     e.preventDefault();
-    setTodo('');
+
+    if (isInputEmpty) return;
+    
     dispatch(createTodo(todo));
+    setTodo('');
   }
 
   return (
