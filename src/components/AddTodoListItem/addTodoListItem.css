@@ -30,12 +30,14 @@
   padding         : 2% 10%;
 
   background      : linear-gradient(90deg, #047012, #03c4ff);
+  background      : -webkit-gradient(90deg, #047012, #03c4ff);
   background-clip : text;
   color           : transparent;
 }
 
 .btn--add-todo-list-item:hover {
   background      : linear-gradient(90deg, #03490c, #03a7da);
+  background      : -webkit-gradient(90deg, #03490c, #03a7da);
   background-clip : text;
   color           : transparent;
 }

@@ -21,12 +21,14 @@
 
 
   background      : linear-gradient(90deg, #6d0707, #ff0303);
+  background      : -webkit-gradient(90deg, #6d0707, #ff0303);
   background-clip : text;
   color           : transparent;
 }
 
 .btn--clear-completed-todos:hover {
   background      : linear-gradient(90deg, #460505, #b90000);
+  background      : -webkit-gradient(90deg, #460505, #b90000);
   background-clip : text;
   color           : transparent;
 }
