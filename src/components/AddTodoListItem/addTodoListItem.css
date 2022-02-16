@@ -28,20 +28,18 @@
 
 .btn--add-todo-list-item {
   padding         : 2% 10%;
+}
 
+.btn--add-todo-list-item span {
   background      : linear-gradient(90deg, #047012, #03c4ff);
   background      : -webkit-gradient(90deg, #047012, #03c4ff);
-  background      : -webkit-linear-gradient(90deg, #047012, #03c4ff);
-  background-image: -webkit-linear-gradient(90deg, #047012, #03c4ff);
   background-clip : text;
   color           : transparent;
 }
 
-.btn--add-todo-list-item:hover {
+.btn--add-todo-list-item span:hover {
   background      : linear-gradient(90deg, #03490c, #03a7da);
   background      : -webkit-gradient(90deg, #03490c, #03a7da);
-  background      : -webkit-linear-gradient(90deg, #03490c, #03a7da);
-  background-image: -webkit-linear-gradient(90deg, #03490c, #03a7da);
   background-clip : text;
   color           : transparent;
 }

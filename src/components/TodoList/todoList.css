@@ -18,25 +18,18 @@
 .btn--clear-completed-todos {
   margin-top      : 2%;
   padding         : 2% 5%;
-
-
-  background              : linear-gradient(90deg, #6d0707, #ff0303);
-  background              : -webkit-gradient(90deg, #6d0707, #ff0303);
-  background              : -webkit-linear-gradient(90deg, #6d0707, #ff0303);
-  background-image        : -webkit-linear-gradient(90deg, #6d0707, #ff0303);
-  background-clip         : text;
-  -webkit-background-clip : text;
-  -webkit-text-fill-color : transparent;
-  color                   : transparent;
 }
 
-.btn--clear-completed-todos:hover {
-  background      : linear-gradient(90deg, #460505, #b90000);
-  background      : -webkit-gradient(90deg, #460505, #b90000);
-  background      : -webkit-linear-gradient(90deg, #460505, #b90000);
-  background-image: -webkit-linear-gradient(90deg, #460505, #b90000);
+.btn--clear-completed-todos span {
+  background      : linear-gradient(90deg, #6d0707, #ff0303);
+  background      : -webkit-gradient(90deg, #6d0707, #ff0303);
   background-clip : text;
   color           : transparent;
-  -webkit-background-clip : text;
-  -webkit-text-fill-color : transparent;
+}
+
+.btn--clear-completed-todos span:hover {
+  background      : linear-gradient(90deg, #460505, #b90000);
+  background      : -webkit-gradient(90deg, #460505, #b90000);
+  background-clip : text;
+  color           : transparent;
 }

@@ -21,7 +21,9 @@
   font-size         : 105%;
   font-weight       : bold;
 
+  background-color  : transparent;
+
   border            : none;
-  
+
   cursor            : pointer;
 }

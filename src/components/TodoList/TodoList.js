@@ -46,7 +46,7 @@ function TodoList() {
         onClick={handleClearingCompletedTodos}
         className='btn btn--clear-completed-todos'
       >
-        Clear Completed Todos
+        <span>Clear Completed Todos</span>
       </button>
     </div>
   )

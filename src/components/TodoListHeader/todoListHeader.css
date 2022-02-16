@@ -14,8 +14,6 @@
 
   background      : linear-gradient(90deg, #047012, #03c4ff);
   background      : -webkit-gradient(90deg, #047012, #03c4ff);
-  background      : -webkit-linear-gradient(90deg, #047012, #03c4ff);
-  background-image: -webkit-linear-gradient(90deg, #047012, #03c4ff);
   background-clip : text;
   color           : transparent;
 }

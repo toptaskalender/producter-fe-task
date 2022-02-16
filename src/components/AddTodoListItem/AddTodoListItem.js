@@ -37,7 +37,9 @@ function AddTodoListItem() {
         <button
           className='btn btn--add-todo-list-item'
         >
-          Create Todo
+          <span>
+            Create Todo
+          </span>
         </button>
       </form>
     </div>
